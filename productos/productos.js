@@ -3,7 +3,7 @@ let textoProducto = document.querySelector('#producto');
 let botonBuscar = document.querySelector('#botonBuscar');
 let body = document.querySelector('#body');
 
-// LLENAR CATEGORIAS
+
 const cargarComboCategoria = (event) => {
     event.preventDefault();
     fetch('https://disenoydesarrolloweb.azurewebsites.net/api/Producto/Categorias')
@@ -19,7 +19,7 @@ const llenarListaCategoria = (listaCategoria) => {
     });
 }
 
-//BUSCAR PRODUCTOS
+
 const buscarProductos = (event) => {
     event.preventDefault();
 
@@ -54,7 +54,7 @@ const imprimirProductosPantalla = (productos) => {
     });
 }
 
-//ELIMINAR UN PRODUCTO
+
 const eliminarProducto = (event) => {
     event.preventDefault();
 
@@ -73,16 +73,7 @@ const eliminarProducto = (event) => {
     }
 } 
 
-//MODIFICAR UN PRODUCTO
-const modificarProducto = (event) => {
-    event.preventDefault();
-
-    if(event.target.className == 'boton-modificar' || event.target.className == 'img-modificar') {
-        //mainFrame.src = "../agregar/agregar.html";
-    }
-} 
 
 botonBuscar.addEventListener('click',buscarProductos);
 window.addEventListener('load',cargarComboCategoria); 
 body.addEventListener('click',eliminarProducto);
-body.addEventListener('click',modificarProducto);
