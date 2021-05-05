@@ -1,0 +1,83 @@
+main {
+    grid-area: main;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    width: 55%;
+    padding: 30px 50px;
+    margin: auto;
+    background-color: lightblue;
+    position: relative;
+}
+
+fieldset div {
+    margin: 10px;
+}
+
+.radios {
+    display: inline-block;
+    margin: 0px;
+}
+
+.inp {
+    position: absolute;
+    left: 350px;
+}
+
+.inp:focus {
+    outline: 0;
+    border-radius: 10px;
+    border: 2px solid #3498DB;
+    transition: all 0.1s ease;
+}
+
+#validar {
+    position: absolute;
+    left: 550px;
+}
+
+#validar:hover {
+    color: #fff;
+    background-color: #3498DB;
+    padding: 2px 10px;
+    transition: all 0.2s ease;
+}
+
+#validar:active {
+    background-color: #85C1E9;
+    transition: all ease;
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.descripcion textarea {
+    resize: none;
+}
+
+.gl {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.gl button {
+    margin: 5px 25px;
+    padding: 3px;
+}
+
+.gl button:hover {
+    color: #fff;
+    background-color: #3498DB;
+    padding: 5px 10px;
+    transition: all 0.2s ease;
+}
+
+.gl button:active {
+    background-color: #85C1E9;
+    transition: all ease;
+}

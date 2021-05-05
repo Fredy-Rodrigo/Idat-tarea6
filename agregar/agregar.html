@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agregar.css">
+</head>
+<body>
+
+    <form action="empleado" method="POST">
+        <fieldset>
+            <legend>Agregar Producto</legend>
+            
+            <div class="codigo">
+                <label for="codigo">Codigo*</label>
+                <input id="codigo" class="inp codigo" type="tel" pattern="[0-9]{6}" maxlength="6" required>
+                <input id="validar" type="button" value="Validar">
+            </div>
+            <div class="nombre">
+                <label for="nombre">Nombre*</label>
+                <input id="nombre" class="inp nombre" type="text" placeholder="Solo letras y numeros" pattern="[a-zA-Z0-9]{2-100}" maxlength="100" required>
+            </div>
+            <div class="categoria">
+                <label for="categoria">Categoria*</label>
+                <select name="" class="inp categoria" id="comboCategoria" required>
+                </select>
+            </div>
+            <div class="ruc">
+                <label for="ruc">RUC Proveedor*</label>
+                <input id="ruc" class="inp ruc" type="tel" pattern="[0-9]{11}" maxlength="11" placeholder="Solo numeros" required>
+            </div>
+            <div class="proveedor">
+                <label for="proveedor">Proveedor*</label>
+                <input id="proveedor" class="inp proveedor" type="text" required>
+            </div>
+            <div class="precio">
+                <label for="precio">Precio*</label>
+                <input id="precio" class="inp precio" type="number" min="0" max="100" step="0.01" required>
+            </div>
+            <div class="fecha">
+                <label for="fecha">Fecha*</label>
+                <input id="fecha" class="inp fecha" type="datetime-local" required>
+            </div>
+            <div class="estado">
+                <label for="estado">Estado*</label>
+
+                <div class="inp radios">
+                    <input type="radio" name="estado" id="activo">
+                    <label for="activo">Activo</label>
+                    <input type="radio" name="estado" id="suspendido">
+                    <label for="suspendido">Suspendido</label>
+                    <input type="radio" name="estado" id="debaja">
+                    <label for="debaja">De baja</label>
+                </div>
+            </div>
+            <div class="impuesto">
+                <label for="impuesto">Afecto a impuesto*</label>
+                <input id="impuesto" type="checkbox" name="impuesto" class="inp impuesto" required>
+            </div>
+            <div class="descripcion">
+                <label for="descripcion">Descripcion</label>
+                <textarea id="descripcion" name="descripcion" class="inp descripcion" cols="50" rows="3"></textarea>
+            </div>
+
+            <div class="gl">
+                <button id="botonAgregar" type="submit">Agregar</button>
+                <button id="botonLimpiar" type="reset">Limpiar</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script src="agregar.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+main {
+    background-color: lightblue;
+    width: 70%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+}
+
+.filtros {
+    width: 95%;
+    margin: auto;
+}
+
+.filtros fieldset {
+    display: flex;
+}
+
+.filtros .textoProducto, .buscar {
+    margin-left: 40px;
+}
+
+.filtros #botonBuscar {
+    box-shadow: 3px 3px 5px black;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: rgb(59, 59, 255);
+    text-align: left;
+    padding-left: 10px;
+}
+
+td {
+    background-color: gainsboro;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.boton-modificar {
+    background-color: rgb(75, 180, 75);
+    padding: 6px;
+}
+
+.boton-eliminar {
+    background-color: rgb(228, 41, 41);
+    padding: 6px;
+}
+
+.img-eliminar, .img-modificar {
+    width: 20px;
+    height: 20px;
+}
+
