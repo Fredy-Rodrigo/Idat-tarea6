@@ -10,7 +10,7 @@ body {
     "footer";
 }
 
-/*HEADER*/
+
 
 header {
     grid-area: header;
@@ -43,7 +43,7 @@ header {
     margin: 10px;
 }
 
-/*NAV*/
+
 
 nav {
     grid-area: nav;
@@ -157,14 +157,14 @@ nav {
     transition: all ease;
 }
 
-/*MAIN*/
+
 
 #mainFrame {
     width: 100%;
     height: 480px;
 }
 
-/*FOOTER*/
+
 
 footer {
     grid-area: footer;
